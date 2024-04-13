@@ -7,11 +7,7 @@ export default function ProductsList({ data }) {
   return (
     <>
       <div>
-        <div className="grid grid-col-4 gap-3">
-          {products.map((value, index) => {
-            return <ProductCard key={index} data={value} />;
-          })}
-        </div>
+        <div className="grid grid-col-4 gap-3"></div>
       </div>
     </>
   );
