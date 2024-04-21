@@ -7,7 +7,11 @@ export default function ProductsList({ data }) {
   return (
     <>
       <div>
-        <div className="grid grid-col-4 gap-3"></div>
+        <div className="grid grid-cols-5 gap-3">
+          {products.map((value, index) => {
+            return <ProductCard key={index} productData={value} />;
+          })}
+        </div>
       </div>
     </>
   );
